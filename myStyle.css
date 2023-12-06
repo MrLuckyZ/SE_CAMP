@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.box {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: lightgray;
+  animation: changeColor 15s infinite;
+}
+
+.box:hover .text {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+@keyframes changeColor {
+  0% {background-color: rgb(255, 150, 150);}
+  50% {background-color: rgb(157, 255, 170);}
+  75% {background-color: rgb(119, 128, 255);}
+  100% {background-color: rgb(255, 150, 150);}
+}
+
+@keyframes changeColor2 {
+  0% {background-color: white;}
+  50% {background-color: black;}
+  100% {background-color: white;}
+}
+
+.middleText {
+  text-align: center;
+  opacity: 75%;
+  animation: changeColor2 1s infinite;
+}
+
+#mydiv {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+}
