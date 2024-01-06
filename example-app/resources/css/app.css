@@ -1,0 +1,14 @@
+/* Apply styles to the container with overflow scroll */
+.scroll-container {
+    width: 300px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    overflow: scroll; /* Enable the scroll */
+    border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+  }
+  
+  /* Add styles to the content inside the scroll container */
+  .scroll-content {
+    width: 600px; /* Set a width larger than the container to enable horizontal scrolling */
+    height: 400px; /* Set a height larger than the container to enable vertical scrolling */
+    background-color: #f0f0f0; /* Optional: Add a background color for better visualization */
+  }
