@@ -21,8 +21,12 @@ Route::get('/', function(){
 });
 
 Route::get('/my-route', function(){
-    $data['val_a'] = "Input Somtings";
+    $data['val_a'] = "Multiply Table";
     return view('test.mainpage',$data);
+});
+
+Route::get('/test-interface', function(){
+    return view('test.testinterface');
 });
 
 Route::post('/my-route', function(Request $req){
